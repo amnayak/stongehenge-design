@@ -2,7 +2,7 @@
 <!-- NOTE: the string 'TODO' appears everywhere you need to fill in information. -->
 <html>
 <head>
-<title>TODO:Title For Your Game</title>
+<title>Stonehenge</title>
 <!-- NOTE: this CSS sets up the ".figure" class to center images, and instructs images in ".figure"s to have space around them and to render crisp pixel edges when scaled [e.g. for retina displays]. -->
 <style>
 .figure {
@@ -15,25 +15,37 @@
 </style>
 </head>
 <body>
-<h1>TODO: Title For Your Game</h1>
-<p>TODO: one-sentence summary of your game, highlighting the unique "hook" of the game.</p>
+<h1>Stonehenge</h1>
+<p>Clear the alien infestation at Stonehenge with minimal collateral damage.</p>
 <!-- the <div> wrapping this image centers it on the page. -->
 <!-- TODO: drawing showing the main view of the game during play -->
 <div class="figure">
-<img src="game.png" />
+<img src="screen.jpg" style="width:300px;height:300px;" />
 </div>
-<p>TODO: more information (2-3 sentences) about gameplay, referring to the image above.</p>
+<p>The above image is the main gameplay screen. On the bottom is a player controlled laser cannon. On the top are 3 stone arches. The objective is to shoot as many enemies as possible within 1 minute. Careful-- if you shoot 3 non-enemies, you lose the game.</p>
 
 <h2>Gameplay</h2>
-<p>TODO: Describe how the game starts, plays (e.g. what are the controls), and ends.</p>
-<!-- TODO: illustrate your descriptions with more drawings -->
+<p> Every 1-3 seconds, an alien or a duck spawns under an arch and lingers for 1-3 seconds. The spawn rate and amount of time an entity lingers is randomly chosen.</p>
 <div class="figure">
-<img src="before-reset.png" />
-<img src="after-reset.png" />
+<img src="duck.jpg" style="width:300px;height:300px;" />
+<img src="alien.jpg" style="width:300px;height:300px;" />
+</div>
+<p> Note: only one creature can be under an arch at a time, but multiple arches can have creatures under them. </p>
+<div class="figure">
+<img src="screen.jpg" style="width:300px;height:300px;" />
+</div>
+<p>The game starts with the screen above. The laser cannon is player controlled, and can move left and right (with the left and right arrow keys). To shoot a laser beam, press space.</p>
+<div class="figure">
+<img src="laser.jpg" style="width:300px;height:300px;" />
 </div>
 
+
+<p> The objective of the game is to shoot as many aliens as possible within 1 minute. If you shoot 3 ducks, you immediately lose and the game ends. When the game ends, either due to time running out or killing too many innocent ducks, the final score is calculated and displayed at the end of the game, using a formula like: </p>
+<p> number of aliens killed - 3 * (number of ducks killed)
+
 <h2>Assets</h2>
-<p>TODO: Provide a link to any preliminary 3D models, sounds, or <a href="https://github.com/ixchow/amoeba-escape/blob/master/tiles.png">textures</a> for the game. Make sure to only link to assets with appropriate licenses.</p>
+<p>Please use the images <a href="link">here</a> for inspiration</p>
+<p>The game could work well with colorful, high contrast, cartoony artstyle.</p>
 
 </body>
 </html>
